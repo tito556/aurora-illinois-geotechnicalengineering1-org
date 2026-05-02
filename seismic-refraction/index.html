@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seismic Tomography Surveys in Aurora, Illinois: Refraction and Reflection Profiling</title>
+<meta name="description" content="High-resolution seismic tomography in Aurora, IL using refraction and reflection methods for bedrock mapping and site class determination. ASTM D5777 compliant surveys with 24-channel seismograph">
+<link rel="canonical" href="https://aurora-illinois.geotechnicalengineering1.org/seismic-refraction/">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Seismic Tomography Surveys in Aurora, Illinois: Refraction and Reflection Profiling">
+<meta property="og:description" content="High-resolution seismic tomography in Aurora, IL using refraction and reflection methods for bedrock mapping and site class determination. ASTM D5777 compliant surveys with 24-channel seismograph">
+<meta property="og:url" content="https://aurora-illinois.geotechnicalengineering1.org/seismic-refraction/">
+<meta property="og:site_name" content="Geotechnicalengineering1">
+<meta property="og:image" content="https://aurora-illinois.geotechnicalengineering1.org/img/tomografia-sismica-5.webp">
+<meta property="og:locale" content="en_US">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Seismic Tomography Surveys in Aurora, Illinois: Refraction and Reflection Profiling">
+<meta name="twitter:description" content="High-resolution seismic tomography in Aurora, IL using refraction and reflection methods for bedrock mapping and site class determination. ASTM D5777 compliant surveys with 24-channel seismograph">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "/"}, {"@type": "ListItem", "position": 2, "name": "Seismic Tomography Surveys in Aurora, Illinois: Refraction and Reflection Profiling"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Seismic Tomography Surveys in Aurora, Illinois: Refraction and Reflection Profiling", "description": "High-resolution seismic tomography in Aurora, IL using refraction and reflection methods for bedrock mapping and site class determination. ASTM D5777 compliant surveys with 24-channel seismograph", "areaServed": {"@type": "City", "name": "Aurora Illinois"}, "provider": {"@type": "LocalBusiness", "name": "Geotechnical Engineering", "email": "contact@geotechnicalengineering1.org", "telephone": "", "address": {"@type": "PostalAddress", "addressLocality": "Aurora Illinois", "addressCountry": "US"}}, "url": "https://aurora-illinois.geotechnicalengineering1.org/seismic-refraction"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How deep can seismic tomography image in Aurora’s glacial geology?", "acceptedAnswer": {"@type": "Answer", "text": "Depth penetration depends on the seismic source energy and geophone spread length, not on the method itself. With a 16-pound sledgehammer and 230-foot spread, we typically map the soil-rock interface to 80–100 feet depth. For deeper targets—such as the base of the Aurora Bedrock Valley at 150 to 200 feet—we deploy an accelerated weight drop source and extend the spread to 460 feet with 48 channels. Reflection profiling can image the Galena-Platteville dolomite stratigraphy to 300 feet when high-fold stacking suppresses the strong ground-roll that dominates the near-surface records in the Fox River valley."}}, {"@type": "Question", "name": "What is the typical cost for a seismic tomography survey in the Aurora area?", "acceptedAnswer": {"@type": "Answer", "text": "A refraction tomography survey in Aurora typically ranges from US$2,740 to US$5,140 depending on the number of seismic lines, the spread length per line, and whether both P-wave and S-wave data are acquired. Factors that influence the final cost include site accessibility along the Fox River corridor, the need for traffic control on arterial roads like Route 25 or Farnsworth Avenue, and the processing requirements for reflection data if deep bedrock targets are specified."}}, {"@type": "Question", "name": "How does seismic tomography compare to MASW for site classification in Kane County?", "acceptedAnswer": {"@type": "Answer", "text": "Both methods measure shear-wave velocity, but they serve different purposes. MASW provides a one-dimensional Vs profile beneath a single array, ideal for rapid Vs30 determination. Seismic tomography produces a continuous two-dimensional velocity cross-section that reveals lateral variations—essential when the Aurora Bedrock Valley creates abrupt changes in soil stiffness across a building footprint. For site classification per ASCE 7-22, we often combine both: MASW for the Vs30 calculation and refraction tomography to map the spatial distribution of velocity layers that control the site period and amplification factors."}}]}</script>
+<style>
+:root {
+    --primary: #171717;
+    --accent: #404040;
+    --dark: #0A0A0A;
+    --bg: #FAFAF9;
+    --text: #171717;
+    --font-h: 'Playfair Display', 'Segoe UI', sans-serif;
+    --font-b: 'Lora', 'Segoe UI', sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
+a { color: var(--primary); text-decoration: none; }
+h1, h2, h3, h4 { font-family: var(--font-h); }
+
+.content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
+.sidebar {
+    width: 240px; background: var(--dark); color: white; flex-shrink: 0;
+    border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
+    max-height: calc(100vh - 2rem); overflow-y: auto;
+}
+/* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
+.sidebar { padding: .5rem 0; }
+/* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
+.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
+.sidebar .cat-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: .65rem 1rem; color: rgba(255,255,255,0.85); font-size: .85rem; font-weight: 500;
+    transition: background .15s;
+}
+.sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
+.sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
+.sidebar .cat-name:hover { color: #c9a961; }
+.sidebar .cat-toggle {
+    background: none; border: 0; color: inherit; cursor: pointer;
+    padding: .2rem .4rem; font-size: .65rem; transition: transform .2s;
+}
+.sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
+.sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
+.sidebar .cat-sub {
+    background: rgba(0,0,0,0.15); display: flex; flex-direction: column;
+}
+.sidebar .cat-sub[hidden] { display: none; }
+.sidebar .cat-sub a {
+    display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
+    font-size: .78rem; transition: all .15s; text-decoration: none;
+    border-left: 2px solid transparent;
+}
+.sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
+.sidebar .home {
+    display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
+    font-size: .85rem; font-weight: 600;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    text-decoration: none;
+}
+.sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
+
+header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
+.header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
+.header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
+.header-contact a:hover { color: white; }
+header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
+main section { margin-bottom: 1.5rem; }
+main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
+main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
+main p { margin-bottom: 1rem; color: #334155; }
+
+table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
+th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
+th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
+tr:nth-child(even) { background: #f8fafc; }
+
+.normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
+.servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.servicio { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; transition: border-color .2s; }
+.servicio:hover { border-color: var(--primary); }
+.servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
+.servicio p { margin: 0; font-size: .9rem; color: #475569; }
+
+details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
+summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
+details[open] summary::before { content: '− '; }
+summary:hover { background: rgba(0,0,0,0.02); }
+details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
+
+.cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
+.cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
+.cta .whatsapp-btn {
+    display: inline-block; background: #25D366; color: white;
+    padding: .75rem 1.75rem; border-radius: 8px; font-weight: 600;
+    margin-bottom: 1.25rem; font-size: 1rem;
+}
+.cta .whatsapp-btn:hover { background: #1eb853; }
+.cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
+.cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
+.cta .contacto-line a { color: white; text-decoration: underline; }
+
+footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
+footer a { color: rgba(255,255,255,0.85); }
+
+#mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+
+@media (max-width: 900px) {
+    .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+    .container { padding: 1rem; }
+}
+</style>
+<link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#0A2540"><link rel="icon" type="image/svg+xml" href="/img/favicon.svg"><link rel="apple-touch-icon" href="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="header-top">
+            <div>
+                <div style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;background:#171717;border-radius:8px;font-family:'Playfair Display',sans-serif;font-weight:800;color:#fafafa;letter-spacing:-0.02em;line-height:1;color:#FAFAF9;font-size:22px;">AI</div>
+                <div style="color:rgba(255,255,255,0.65);font-size:.8rem;margin-top:.4rem">Aurora Illinois, USA</div>
+            </div>
+            <div class="header-contact">
+                <a href="mailto:contact@geotechnicalengineering1.org">contact@geotechnicalengineering1.org</a>
+            </div>
+        </div>
+        <nav aria-label="breadcrumb" style="padding:.3rem 0;font-size:.78rem;color:rgba(255,255,255,0.75)"><ol style="list-style:none;display:flex;gap:.35rem;flex-wrap:wrap;padding:0;margin:0"><li><a href="/" style="color:inherit;text-decoration:none">Home</a></li><li>›</li><li>Geophysics</li><li>›</li><li aria-current="page" style="color:rgba(255,255,255,0.95)">Seismic Tomography Surveys in Aurora, Illinois: Refraction a…</li></ol></nav>
+        <h1>Seismic Tomography Surveys in Aurora, Illinois: Refraction and Reflection Profiling</h1>
+    </div>
+</header>
+
+<div class="container">
+    <div class="content-area">
+        <aside class="sidebar">
+            <nav><a href="index.html" class="home">Home</a><div class="cat-item" data-cat="investigation"><div class="cat-row"><a href="/investigation/" class="cat-name">Investigation</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Investigation"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/cpt-test/">CPT (Cone Penetration Test)</a></div></div><div class="cat-item" data-cat="lab-in-situ"><div class="cat-row"><a href="/lab-in-situ/" class="cat-name">In-Situ Testing</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir In-Situ Testing"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/sand-cone-density/">Field density test (sand cone method)</a></div></div><div class="cat-item" data-cat="laboratory"><div class="cat-row"><a href="/laboratory/" class="cat-name">Laboratory</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Laboratory"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/atterberg-limits/">Atterberg limits</a><a href="/grain-size/">Grain size analysis (sieve + hydrometer)</a></div></div><div class="cat-item" data-cat="foundations"><div class="cat-row"><a href="/foundations/" class="cat-name">Foundations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Foundations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/piles/">Pile foundation design</a></div></div><div class="cat-item" data-cat="slopes"><div class="cat-row"><a href="/slopes/" class="cat-name">Slopes & Walls</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Slopes & Walls"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/anchors/">Active/passive anchor design</a><a href="/retaining-walls/">Retaining wall design</a><a href="/slope-stability/">Slope stability analysis</a></div></div><div class="cat-item" data-cat="ground-improvement"><div class="cat-row"><a href="/ground-improvement/" class="cat-name">Ground improvement</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Ground improvement"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/stone-columns/">Stone column design</a><a href="/vibrocompaction/">Vibrocompaction design</a></div></div><div class="cat-item" data-cat="seismic"><div class="cat-row"><a href="/seismic/" class="cat-name">Seismic</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Seismic"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/seismic-isolation/">Base isolation seismic design</a><a href="/seismic-microzonation/">Seismic microzonation</a><a href="/liquefaction/">Soil liquefaction analysis</a></div></div><div class="cat-item" data-cat="road-geotechnics"><div class="cat-row"><a href="/road-geotechnics/" class="cat-name">Roadway</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Roadway"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/cbr-road/">CBR study for road design</a><a href="/flexible-pavement/">Flexible pavement design</a><a href="/rigid-pavement/">Rigid pavement design</a></div></div><div class="cat-item" data-cat="excavations"><div class="cat-row"><a href="/excavations/" class="cat-name">Underground Excavations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Underground Excavations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/soft-ground-tunnels/">Geotechnical analysis for soft soil tunnels</a><a href="/deep-excavations/">Geotechnical design of deep excavations</a><a href="/excavation-monitoring/">Geotechnical excavation monitoring</a></div></div></nav>
+        </aside>
+        <main>
+            <section><p>A 24-channel seismograph system with 28-Hz geophones deployed in linear spreads of up to 230 feet captures the energy from a 16-pound sledgehammer source striking an aluminum plate. That is the typical field setup our technical crew mobilizes across Aurora’s glacial terrain—where the Fox River has carved through Wisconsin Episode till and outwash deposits. The geophone array records P-wave and S-wave arrivals at 0.125-millisecond sampling intervals, generating travel-time curves that feed into tomographic inversion algorithms. For deep bedrock profiling along the I-88 corridor expansion zones, we often pair this with a <a data-interlink="1" href="/seismic-refraction/">seismic refraction</a> survey using 48-channel spreads to resolve the contact between the Ordovician dolomite and the overlying Quaternary sediments. The resulting 2D velocity cross-sections reveal lateral variations that standard borehole logging cannot capture, particularly where paleo-channels filled with compressible organic silts intersect proposed footing locations.</p></section>
+
+            <blockquote style="border-left:4px solid #171717;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">Seismic velocity contrasts between glacial drift and dolomite bedrock in Aurora produce a first-arrive crossover distance that reliably identifies the soil-rock interface within ±3 feet.</blockquote>
+
+            
+
+            <section>
+                <h2>Technical details of the service in Aurora Illinois</h2>
+                <div>Aurora’s industrial expansion since the 1840s—first driven by the Fox River’s hydropower, then by the Chicago, Burlington & Quincy Railroad shops—has left a subsurface mosaic of natural deposits and anthropogenic fill. The city’s downtown redevelopment parcels sit atop 60 to 120 feet of glacial drift overlying the Galena-Platteville dolomite sequence. Seismic tomography cuts through that complexity: the refraction method maps the compressional velocity contrast at the soil-rock interface, while multi-channel analysis produces a Vs profile for site classification per ASCE 7-22 Chapter 20. Before designing deep foundations or <a href="/mat-foundations/">mat foundations</a> on the silty clays east of Route 31, engineers need the shear-wave velocity data that only a crosshole or downhole seismic survey can deliver. The inversion process uses the generalized reciprocal method for refractor geometry and runs damped least-squares iterations for the velocity grid, converging on a model with RMS misfit below 0.5 milliseconds. Where reflection profiling is required—typically for mapping fracture zones in the dolomite bedrock beneath the Waubonsee Creek basin—we deploy a common-midpoint stack with 12-fold coverage and process the data through bandpass filtering and predictive deconvolution. This dual-capability approach, combined with <a href="/masw/">MASW</a> profiling for near-surface Vs30 mapping, gives structural engineers the full velocity picture needed for seismic design category determination.</div>
+            </section>
+
+            <figure style="margin:2rem auto;text-align:center;max-width:60%"><img src="/img/tomografia-sismica-5.webp" alt="Seismic Tomography Surveys in Aurora, Illinois: Refraction and Reflection Profiling" width="600" height="300" loading="lazy" decoding="async" style="width:100%;max-height:160px;object-fit:cover;border-radius:8px"><figcaption style="font-size:.78rem;color:#64748b;margin-top:.4rem">Seismic Tomography Surveys in Aurora, Illinois: Refraction and Reflection Profiling</figcaption></figure>
+
+            <div style="max-width:700px;margin:1.5rem auto;border-left:4px solid #171717;border-radius:6px;overflow:hidden;background:#FFF;box-shadow:0 1px 3px rgba(0,0,0,.05)"><table style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr style="background:#171717;color:#FFF"><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Parameter</th><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Typical value</th></tr></thead><tbody><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Seismic source</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">16 lb sledgehammer on aluminum plate; accelerated weight drop for depths >100 ft</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Geophone array</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">24 or 48 channels, 28-Hz vertical-component geophones, 5–10 ft spacing</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Sampling interval</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">0.125–0.250 ms, 1–2 s record length</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Refraction method</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Generalized Reciprocal Method (GRM); delay-time analysis</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Tomographic inversion</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Damped least-squares with curved-ray tracing; RMS misfit <0.5 ms</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Reflection processing</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">CMP sorting, NMO correction, bandpass filtering, deconvolution</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Deliverable format</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">2D P-wave and S-wave velocity cross-sections; Vs30 profile; DXF/CSV grids</td></tr></tbody></table></div>
+
+            
+
+            <section>
+                <h2>Local geotechnical conditions in Aurora Illinois</h2>
+                <p>Aurora sits at an elevation of 676 feet above sea level on the Fox River floodplain, and the USGS Quaternary geologic map of Kane County reveals a buried bedrock valley—the Aurora Bedrock Valley—trending southwest to northeast beneath the city center. This paleo-topography creates abrupt velocity contrasts that, if unresolved, produce seismic reflection artifacts and incorrect depth-to-bedrock estimates. The 2010 M5.2 earthquake near the Sandwich Fault Zone, felt across Aurora, reminded structural engineers that northern Illinois is not aseismic; the IBC design spectral response acceleration for the area demands a Site Class determination that depends directly on shear-wave velocity in the upper 100 feet. Seismic tomography that skips S-wave acquisition leaves the Vs30 parameter unknown, forcing conservative assumptions that inflate foundation costs. For <a data-interlink="1" href="/deep-excavations/">deep excavations</a> and retention systems near the Fox River’s high groundwater table, the combination of seismic stratigraphy and borehole control reduces the risk of mischaracterizing the stiffness contrast between the Lemont Formation till and the softer Equality Formation silts.</p>
+            </section>
+
+            
+    <section class="block mid-cta" style="padding:2rem 0">
+      <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#16A34A15,#16A34A08);border-left:4px solid #16A34A;padding:1.6rem 1.8rem;border-radius:8px;text-align:center">
+        <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3>
+        <p style="margin:0 0 1rem;color:#64748B;font-size:.92rem;text-align:center">Reply within 24h.</p>
+        <div style="margin:.4rem 0 0;text-align:center"><a href="mailto:contact@geotechnicalengineering1.org" style="display:inline-block;background:#16A34A;color:#FFF !important;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:800;font-size:1.05rem;box-shadow:0 4px 12px rgba(0,0,0,.15)">Email: contact@geotechnicalengineering1.org</a></div>
+      </div>
+    </section>
+
+            <div class="normas">
+                <strong>Applicable standards:</strong> ASTM D5777-18: Standard Guide for Using the Seismic Refraction Method, ASCE 7-22 Chapter 20: Site Classification Procedure for Seismic Design, ASTM D7128-18: Standard Guide for Using the Seismic-Reflection Method, ASTM D7400-19: Standard Test Methods for Downhole Seismic Testing
+            </div>
+
+            <section>
+                <h2>Our services</h2>
+                <p>Our seismic tomography program in Aurora integrates multiple geophysical techniques to address the full range of subsurface characterization needs—from shallow utility corridor investigations to deep bedrock profiling for high-rise foundations.</p>
+                <style>.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}.servicios-grid a.servicio-link:hover{border-color:#171717;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicios-grid a.servicio-link:hover h3{color:#171717}.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#171717;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}</style><div class="servicios-grid"><div class="servicio"><h3>Refraction Tomography for Bedrock Mapping</h3><p>Multi-channel P-wave refraction surveys with first-arrival picking and travel-time inversion produce continuous 2D bedrock surface profiles. We apply the Generalized Reciprocal Method for refractor geometry and run tomographic iterations to resolve velocity gradients within the glacial drift. The output includes a contoured bedrock surface with elevation accuracy within ±3 feet, essential for projects where the Ordovician dolomite surface controls excavation depth and foundation bearing capacity. Each survey line is tied to existing borehole logs from the Illinois State Geological Survey database for ground-truth calibration.</p></div><div class="servicio"><h3>Multi-Channel Reflection Profiling for Deep Targets</h3><p>For mapping fracture zones, solution cavities, and structural features in the Galena-Platteville dolomite sequence below 100-foot depth, we deploy common-midpoint reflection surveys with 12-fold to 24-fold coverage. Processing includes elevation statics correction, frequency-wavenumber filtering, and pre-stack time migration. The resulting seismic sections identify sub-vertical discontinuities that correlate with known joint sets in the Aurora area, providing critical input for <a data-interlink="1" href="/liquefaction/">liquefaction</a> assessment and deep foundation design where the bedrock integrity controls end-bearing pile performance.</p></div></div>
+            </section>
+
+            <section>
+                <h2>Frequently asked questions</h2>
+                <details><summary>How deep can seismic tomography image in Aurora’s glacial geology?</summary><p>Depth penetration depends on the seismic source energy and geophone spread length, not on the method itself. With a 16-pound sledgehammer and 230-foot spread, we typically map the soil-rock interface to 80–100 feet depth. For deeper targets—such as the base of the Aurora Bedrock Valley at 150 to 200 feet—we deploy an accelerated weight drop source and extend the spread to 460 feet with 48 channels. Reflection profiling can image the Galena-Platteville dolomite stratigraphy to 300 feet when high-fold stacking suppresses the strong ground-roll that dominates the near-surface records in the Fox River valley.</p></details><details><summary>What is the typical cost for a seismic tomography survey in the Aurora area?</summary><p>A refraction tomography survey in Aurora typically ranges from US$2,740 to US$5,140 depending on the number of seismic lines, the spread length per line, and whether both P-wave and S-wave data are acquired. Factors that influence the final cost include site accessibility along the Fox River corridor, the need for traffic control on arterial roads like Route 25 or Farnsworth Avenue, and the processing requirements for reflection data if deep bedrock targets are specified.</p></details><details><summary>How does seismic tomography compare to MASW for site classification in Kane County?</summary><p>Both methods measure shear-wave velocity, but they serve different purposes. MASW provides a one-dimensional Vs profile beneath a single array, ideal for rapid Vs30 determination. Seismic tomography produces a continuous two-dimensional velocity cross-section that reveals lateral variations—essential when the Aurora Bedrock Valley creates abrupt changes in soil stiffness across a building footprint. For site classification per ASCE 7-22, we often combine both: MASW for the Vs30 calculation and refraction tomography to map the spatial distribution of velocity layers that control the site period and amplification factors.</p></details>
+            </section>
+
+            <section>
+                <h2>Coverage in Aurora Illinois</h2>
+                <link rel="stylesheet" href="/css/leaflet.css"/>
+                <div id="mapa-ciudad"></div>
+                <script src="/js/leaflet.js"></script>
+                <script>
+                    var map = L.map('mapa-ciudad').setView([41.7931,-88.3819], 12);
+                    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png',{attribution:'&copy; OSM &copy; CARTO',subdomains:'abcd',maxZoom:19}).addTo(map);
+                    L.circle([41.7931,-88.3819],{radius:3000,color:'#171717',fillColor:'#404040',fillOpacity:0.18,weight:2}).addTo(map).bindPopup('Coverage area — Aurora Illinois');
+                </script>
+            </section>
+        </main>
+    </div>
+</div>
+
+<footer style="background:#0A0A0A;color:rgba(255,255,255,.85);padding:3rem 1.5rem 1.5rem"><div style="max-width:720px;margin:0 auto;text-align:center"><h4 style="color:#FFF;font-size:1.15rem;margin:0 0 .3rem">Technical updates</h4><p style="margin:0 0 1.2rem;color:rgba(255,255,255,.65);font-size:.95rem">Get email updates</p><form action="mailto:contact@geotechnicalengineering1.org" method="post" enctype="text/plain" style="display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap"><input type="email" name="email" placeholder="Your email" style="padding:.7rem 1rem;border-radius:6px;border:none;font-size:.95rem;min-width:220px"><button type="submit" style="background:#404040;color:#FFF;padding:.7rem 1.4rem;border:none;border-radius:6px;font-weight:700;cursor:pointer">Subscribe</button></form><p style="margin:1.5rem 0 0;font-size:.82rem;color:rgba(255,255,255,.5)">Aurora Illinois, USA · <a href="mailto:contact@geotechnicalengineering1.org" style="color:rgba(255,255,255,.7)">contact@geotechnicalengineering1.org</a> · © 2026</p></div><div data-authority-refs class="authority-refs" style="text-align:center;font-size:.8rem;padding:.5rem 0;opacity:.6"><strong>References:</strong> <a href="https://www.astm.org/products-services/standards-and-publications.html" rel="nofollow noopener" target="_blank">ASTM Standards</a> · <a href="https://www.publications.usace.army.mil/USACE-Publications/Engineer-Manuals/" rel="nofollow noopener" target="_blank">USACE Engineer Manuals</a> · <a href="https://www.iso.org/committee/49802.html" rel="nofollow noopener" target="_blank">ISO Geotechnical</a></div><div class="updated-info" data-updated="2026-05-01" style="text-align:center;font-size:.85rem;opacity:.7;padding:.5rem 0">Last updated: 2026-05-01</div></footer>
+
+<script>
+// Sidebar cat-toggle: click expande/contrae cat-sub (REGLA 30b)
+document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.cat-toggle');
+    if (!btn) return;
+    e.preventDefault();
+    var item = btn.closest('.cat-item');
+    if (!item) return;
+    var sub = item.querySelector('.cat-sub');
+    if (!sub) return;
+    var open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+    if (open) {
+        sub.setAttribute('hidden', '');
+    } else {
+        sub.removeAttribute('hidden');
+    }
+});
+</script>
+</body>
+</html>

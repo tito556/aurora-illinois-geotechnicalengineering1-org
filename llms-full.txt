@@ -1,0 +1,51 @@
+# Geotechnicalengineering1 — Aurora Illinois
+
+> Geotechnical engineering services in Aurora Illinois, United States.
+
+## Services
+- [Anchors](https://aurora-illinois.geotechnicalengineering1.org/anchors/)
+- [Atterberg Limits](https://aurora-illinois.geotechnicalengineering1.org/atterberg-limits/)
+- [Cbr Road](https://aurora-illinois.geotechnicalengineering1.org/cbr-road/)
+- [Cpt Test](https://aurora-illinois.geotechnicalengineering1.org/cpt-test/)
+- [Deep Excavations](https://aurora-illinois.geotechnicalengineering1.org/deep-excavations/)
+- [Excavation Monitoring](https://aurora-illinois.geotechnicalengineering1.org/excavation-monitoring/)
+- [Excavations](https://aurora-illinois.geotechnicalengineering1.org/excavations/)
+- [Flexible Pavement](https://aurora-illinois.geotechnicalengineering1.org/flexible-pavement/)
+- [Footings](https://aurora-illinois.geotechnicalengineering1.org/footings/)
+- [Foundations](https://aurora-illinois.geotechnicalengineering1.org/foundations/)
+- [Grain Size](https://aurora-illinois.geotechnicalengineering1.org/grain-size/)
+- [Ground Improvement](https://aurora-illinois.geotechnicalengineering1.org/ground-improvement/)
+- [Grouting](https://aurora-illinois.geotechnicalengineering1.org/grouting/)
+- [In Situ Permeability](https://aurora-illinois.geotechnicalengineering1.org/in-situ-permeability/)
+- [Investigation](https://aurora-illinois.geotechnicalengineering1.org/investigation/)
+- [Lab In Situ](https://aurora-illinois.geotechnicalengineering1.org/lab-in-situ/)
+- [Laboratory](https://aurora-illinois.geotechnicalengineering1.org/laboratory/)
+- [Liquefaction](https://aurora-illinois.geotechnicalengineering1.org/liquefaction/)
+- [Masw](https://aurora-illinois.geotechnicalengineering1.org/masw/)
+- [Mat Foundations](https://aurora-illinois.geotechnicalengineering1.org/mat-foundations/)
+- [Piles](https://aurora-illinois.geotechnicalengineering1.org/piles/)
+- [Proctor Tests](https://aurora-illinois.geotechnicalengineering1.org/proctor-tests/)
+- [Resistivity](https://aurora-illinois.geotechnicalengineering1.org/resistivity/)
+- [Retaining Walls](https://aurora-illinois.geotechnicalengineering1.org/retaining-walls/)
+- [Rigid Pavement](https://aurora-illinois.geotechnicalengineering1.org/rigid-pavement/)
+- [Road Geotechnics](https://aurora-illinois.geotechnicalengineering1.org/road-geotechnics/)
+- [Sand Cone Density](https://aurora-illinois.geotechnicalengineering1.org/sand-cone-density/)
+- [Seismic](https://aurora-illinois.geotechnicalengineering1.org/seismic/)
+- [Seismic Isolation](https://aurora-illinois.geotechnicalengineering1.org/seismic-isolation/)
+- [Seismic Microzonation](https://aurora-illinois.geotechnicalengineering1.org/seismic-microzonation/)
+- [Seismic Refraction](https://aurora-illinois.geotechnicalengineering1.org/seismic-refraction/)
+- [Slope Stability](https://aurora-illinois.geotechnicalengineering1.org/slope-stability/)
+- [Slopes](https://aurora-illinois.geotechnicalengineering1.org/slopes/)
+- [Soft Ground Tunnels](https://aurora-illinois.geotechnicalengineering1.org/soft-ground-tunnels/)
+- [Spt Drilling](https://aurora-illinois.geotechnicalengineering1.org/spt-drilling/)
+- [Stone Columns](https://aurora-illinois.geotechnicalengineering1.org/stone-columns/)
+- [Test Pits](https://aurora-illinois.geotechnicalengineering1.org/test-pits/)
+- [Triaxial](https://aurora-illinois.geotechnicalengineering1.org/triaxial/)
+- [Vibrocompaction](https://aurora-illinois.geotechnicalengineering1.org/vibrocompaction/)
+
+## Contact
+- Website: https://aurora-illinois.geotechnicalengineering1.org/
+
+## About
+This site provides geotechnical engineering services in Aurora Illinois, United States.
+Compliant with local and international standards (ASTM, ISO, country-specific norms).
