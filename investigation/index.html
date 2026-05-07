@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><link rel="icon" type="image/svg+xml" href="/img/favicon.svg"><link rel="apple-touch-icon" href="/img/favicon.svg">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Investigation in Aurora Illinois – USA</title>
@@ -19,6 +19,48 @@
 <meta name="twitter:title" content="Investigation in Aurora Illinois – USA">
 <meta name="twitter:description" content="Subsurface investigation in Aurora, Illinois, addresses the distinct glacial geology and compressible soils of the Fox River Valley, where site response is">
 <style>
+
+@media (max-width: 900px) {
+    .sidebar { display: none; }
+summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
+
+table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
+tr:nth-child(even) { background: #f8fafc; }
+.cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
+header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
+footer a { color: rgba(255,255,255,0.85); }
+    .container { padding: 1rem; }
+summary::-webkit-details-marker { display: none; }
+.sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
+h1, h2, h3, h4 { font-family: var(--font-h); }
+body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
+.sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
+.cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
+main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
+summary:hover { background: rgba(0,0,0,0.02); }
+.servicio { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; transition: border-color .2s; }
+.sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
+
+header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
+    .content-area { flex-direction: column; }
+
+.content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
+.cta .contacto-line a { color: white; text-decoration: underline; }
+.sidebar .cat-name:hover { color: #c9a961; }
+.cta .whatsapp-btn:hover { background: #1eb853; }
+th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
+.servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
+/* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
+.sidebar { padding: .5rem 0; }
+.cta .whatsapp-btn {
+    display: inline-block; background: #25D366; color: white;
+    padding: .75rem 1.75rem; border-radius: 8px; font-weight: 600;
+    margin-bottom: 1.25rem; font-size: 1rem;
+}
+.sidebar .cat-sub[hidden] { display: none; }
+summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
+a { color: var(--primary); text-decoration: none; }
+.sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 :root {
     --primary: #171717;
     --accent: #404040;
@@ -28,111 +70,67 @@
     --font-h: 'Playfair Display', 'Segoe UI', sans-serif;
     --font-b: 'Lora', 'Segoe UI', sans-serif;
 }
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
-a { color: var(--primary); text-decoration: none; }
-h1, h2, h3, h4 { font-family: var(--font-h); }
-
-.content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
-.sidebar {
-    width: 240px; background: var(--dark); color: white; flex-shrink: 0;
-    border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
-    max-height: calc(100vh - 2rem); overflow-y: auto;
-}
-/* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
-.sidebar { padding: .5rem 0; }
+.servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
 /* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
-.sidebar .cat-row {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: .65rem 1rem; color: rgba(255,255,255,0.85); font-size: .85rem; font-weight: 500;
-    transition: background .15s;
-}
-.sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
-.sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
-.sidebar .cat-name:hover { color: #c9a961; }
+th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
+main section { margin-bottom: 1.5rem; }
+.header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 .sidebar .cat-toggle {
     background: none; border: 0; color: inherit; cursor: pointer;
     padding: .2rem .4rem; font-size: .65rem; transition: transform .2s;
 }
-.sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
-.sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
+
+details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
+details[open] summary::before { content: '− '; }
+.header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+.cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
+    main { padding: 1.5rem; }
+
+#mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
+
+.normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
+main p { margin-bottom: 1rem; color: #334155; }
 .sidebar .cat-sub {
     background: rgba(0,0,0,0.15); display: flex; flex-direction: column;
 }
-.sidebar .cat-sub[hidden] { display: none; }
 .sidebar .cat-sub a {
     display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
     font-size: .78rem; transition: all .15s; text-decoration: none;
     border-left: 2px solid transparent;
 }
-.sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
+.servicio p { margin: 0; font-size: .9rem; color: #475569; }
+main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
+* { margin:0; padding:0; box-sizing:border-box; }
+.servicio:hover { border-color: var(--primary); }
+
+footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
+.header-contact a:hover { color: white; }
+    .header-top { flex-direction: column; text-align: center; }
 .sidebar .home {
     display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
     font-size: .85rem; font-weight: 600;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-.sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
-
-header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-.header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
-.header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
-.header-contact a:hover { color: white; }
-header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
-.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
-main section { margin-bottom: 1.5rem; }
-main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
-main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
-main p { margin-bottom: 1rem; color: #334155; }
-
-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
-th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
-th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
-tr:nth-child(even) { background: #f8fafc; }
-
-.normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
-.servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-.servicio { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; transition: border-color .2s; }
-.servicio:hover { border-color: var(--primary); }
-.servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
-.servicio p { margin: 0; font-size: .9rem; color: #475569; }
-
-details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
-summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
-summary::-webkit-details-marker { display: none; }
-summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
-details[open] summary::before { content: '− '; }
-summary:hover { background: rgba(0,0,0,0.02); }
-details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
+.sidebar {
+    width: 240px; background: var(--dark); color: white; flex-shrink: 0;
+    border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
+    max-height: calc(100vh - 2rem); overflow-y: auto;
+}
 
 .cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
-.cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
-.cta .whatsapp-btn {
-    display: inline-block; background: #25D366; color: white;
-    padding: .75rem 1.75rem; border-radius: 8px; font-weight: 600;
-    margin-bottom: 1.25rem; font-size: 1rem;
+.sidebar .cat-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: .65rem 1rem; color: rgba(255,255,255,0.85); font-size: .85rem; font-weight: 500;
+    transition: background .15s;
 }
-.cta .whatsapp-btn:hover { background: #1eb853; }
-.cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
-.cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
-.cta .contacto-line a { color: white; text-decoration: underline; }
-
-footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
-footer a { color: rgba(255,255,255,0.85); }
-
-#mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
-
-@media (max-width: 900px) {
-    .sidebar { display: none; }
-    .content-area { flex-direction: column; }
-    .header-top { flex-direction: column; text-align: center; }
-    main { padding: 1.5rem; }
-    .container { padding: 1rem; }
-}
-</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://aurora-illinois.geotechnicalengineering1.org/investigation/", "url": "https://aurora-illinois.geotechnicalengineering1.org/investigation/", "name": "Investigation in Aurora Illinois – USA", "inLanguage": "en", "description": "Subsurface investigation in Aurora, Illinois, addresses the distinct glacial geology and compressible soils of the Fox River Valley, where site response is", "isPartOf": {"@type": "WebSite", "@id": "https://aurora-illinois.geotechnicalengineering1.org/#website", "url": "https://aurora-illinois.geotechnicalengineering1.org"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://aurora-illinois.geotechnicalengineering1.org/"}, {"@type": "ListItem", "position": 2, "name": "Investigation", "item": "https://aurora-illinois.geotechnicalengineering1.org/investigation/"}]}, {"@type": "ItemList", "name": "Investigation", "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://aurora-illinois.geotechnicalengineering1.org/cpt-test/", "name": "CPT (Cone Penetration Test)"}]}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#0A2540"><link rel="icon" type="image/svg+xml" href="/img/favicon.svg"><link rel="apple-touch-icon" href="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
+.sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
+.sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
+details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"url":"https://aurora-illinois.geotechnicalengineering1.org/investigation/","name":"Investigation in Aurora Illinois – USA","@id":"https://aurora-illinois.geotechnicalengineering1.org/investigation/","description":"Subsurface investigation in Aurora, Illinois, addresses the distinct glacial geology and compressible soils of the Fox River Valley, where site response is","inLanguage":"en","@type":"WebPage","isPartOf":{"url":"https://aurora-illinois.geotechnicalengineering1.org","@type":"WebSite","@id":"https://aurora-illinois.geotechnicalengineering1.org/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"item":"https://aurora-illinois.geotechnicalengineering1.org/","position":1,"@type":"ListItem","name":"Home"},{"item":"https://aurora-illinois.geotechnicalengineering1.org/investigation/","position":2,"@type":"ListItem","name":"Investigation"}]},{"name":"Investigation","@type":"ItemList","itemListElement":[{"url":"https://aurora-illinois.geotechnicalengineering1.org/cpt-test/","position":1,"@type":"ListItem","name":"CPT (Cone Penetration Test)"}]}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#0A2540"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
 <header>
@@ -181,7 +179,7 @@ footer a { color: rgba(255,255,255,0.85); }
             </section>
 
             
-    <section class="block mid-cta" style="padding:2rem 0">
+    <section class="block mid-cta-b684-b684" style="padding:2rem 0">
       <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#16A34A15,#16A34A08);border-left:4px solid #16A34A;padding:1.6rem 1.8rem;border-radius:8px;text-align:center">
         <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3>
         <p style="margin:0 0 1rem;color:#64748B;font-size:.92rem;text-align:center">Reply within 24h.</p>
@@ -196,31 +194,15 @@ footer a { color: rgba(255,255,255,0.85); }
             <section>
                 <h2>Our services</h2>
                 <p>Our Aurora anchor design scope covers three distinct project types. Each follows a clear sequence from subsurface investigation to construction support.</p>
-                <style>.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}.servicios-grid a.servicio-link:hover{border-color:#171717;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicios-grid a.servicio-link:hover h3{color:#171717}.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#171717;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}</style><div class="servicios-grid"><div class="servicio"><h3>Tieback Design for Permanent Walls</h3><p>Full design package for soldier pile and lagging walls restrained by active tiebacks. Includes bond length calculation, unbonded length verification, corrosion protection specification, and staged excavation sequence. We deliver signed calculations for City of Aurora permit submittal.</p></div><div class="servicio"><h3>Soil Nail Wall Design for Temporary Cuts</h3><p>Drill-and-grout passive nails for excavation support in glacial till and alluvium. We provide nail spacing, bar size, facing reinforcement, and drainage details. Suitable for 90-day to 18-month exposure periods on commercial site work.</p></div><div class="servicio"><h3>Anchor Load Testing and Evaluation</h3><p>On-site proof testing and performance testing per ASTM D3966 and PTI standards. We monitor creep, residual movement, and lock-off load. When an existing wall shows distress, we perform lift-off tests to diagnose tendon relaxation or bond failure.</p></div></div>
+                <style>.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#171717;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}.servicios-grid a.servicio-link:hover{border-color:#171717;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicios-grid a.servicio-link:hover h3{color:#171717}.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}</style><div class="servicios-grid"><div class="servicio"><h3>Tieback Design for Permanent Walls</h3><p>Full design package for soldier pile and lagging walls restrained by active tiebacks. Includes bond length calculation, unbonded length verification, corrosion protection specification, and staged excavation sequence. We deliver signed calculations for City of Aurora permit submittal.</p></div><div class="servicio"><h3>Soil Nail Wall Design for Temporary Cuts</h3><p>Drill-and-grout passive nails for excavation support in glacial till and alluvium. We provide nail spacing, bar size, facing reinforcement, and drainage details. Suitable for 90-day to 18-month exposure periods on commercial site work.</p></div><div class="servicio"><h3>Anchor Load Testing and Evaluation</h3><p>On-site proof testing and performance testing per ASTM D3966 and PTI standards. We monitor creep, residual movement, and lock-off load. When an existing wall shows distress, we perform lift-off tests to diagnose tendon relaxation or bond failure.</p></div></div>
             </section>
 
-            <section>
-                <h2>Frequently asked questions</h2>
-                <details><summary>What does active/passive anchor design cost in Aurora?</summary><p>For a typical Aurora project, engineering design fees range from US$920 for a straightforward soil nail wall with standard soil data, up to US$4,040 for a permanent tied-back system requiring corrosion protection, seismic analysis, and multiple test anchor programs. The fee depends on wall height, number of anchors, and whether existing borings are sufficient or new subsurface investigation is needed.</p></details><details><summary>When do I need active tiebacks instead of passive soil nails?</summary><p>Active tiebacks are required when you cannot tolerate lateral deflection. Think of a property line wall with an adjacent building 3 ft away on Galena Boulevard. Passive nails need soil movement to engage. Tiebacks are prestressed and locked off, so they apply immediate restraint. We also specify them for permanent walls over 15 ft in Aurora's soft silt zones.</p></details><details><summary>What subsurface data do you need for anchor design?</summary><p>At minimum, we need SPT N-values and soil classification per ASTM D2487 for the full retained height plus the bonded zone depth. For permanent anchors in Aurora's Fox River deposits, we strongly recommend consolidated-undrained triaxial tests to get the effective friction angle and undrained shear strength. If groundwater is within the excavation zone, we need a piezometer reading from the boring log.</p></details>
-            </section>
-
-            <section>
-                <h2>Coverage in Aurora Illinois</h2>
-                <link rel="stylesheet" href="/css/leaflet.css"/>
-                <div id="mapa-ciudad"></div>
-                <script src="/js/leaflet.js"></script>
-                <script>
-                    var map = L.map('mapa-ciudad').setView([41.7931,-88.3819], 12);
-                    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png',{attribution:'&copy; OSM &copy; CARTO',subdomains:'abcd',maxZoom:19}).addTo(map);
-                    L.circle([41.7931,-88.3819],{radius:3000,color:'#171717',fillColor:'#404040',fillOpacity:0.18,weight:2}).addTo(map).bindPopup('Coverage area — Aurora Illinois');
-                </script>
-            </section>
-        
+            
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../cpt-test/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">CPT (Cone Penetration Test)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
     </div>
 </div>
 
-<footer style="background:#0A0A0A;color:rgba(255,255,255,.85);padding:3rem 1.5rem 1.5rem"><div style="max-width:720px;margin:0 auto;text-align:center"><h4 style="color:#FFF;font-size:1.15rem;margin:0 0 .3rem">Technical updates</h4><p style="margin:0 0 1.2rem;color:rgba(255,255,255,.65);font-size:.95rem">Get email updates</p><form action="mailto:contact@geotechnicalengineering1.org" method="post" enctype="text/plain" style="display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap"><input type="email" name="email" placeholder="Your email" style="padding:.7rem 1rem;border-radius:6px;border:none;font-size:.95rem;min-width:220px"><button type="submit" style="background:#404040;color:#FFF;padding:.7rem 1.4rem;border:none;border-radius:6px;font-weight:700;cursor:pointer">Subscribe</button></form><p style="margin:1.5rem 0 0;font-size:.82rem;color:rgba(255,255,255,.5)">Aurora Illinois, USA · <a href="mailto:contact@geotechnicalengineering1.org" style="color:rgba(255,255,255,.7)">contact@geotechnicalengineering1.org</a> · © 2026</p></div><div data-authority-refs class="authority-refs" style="text-align:center;font-size:.8rem;padding:.5rem 0;opacity:.6"><strong>References:</strong> <a href="https://www.astm.org/products-services/standards-and-publications.html" rel="nofollow noopener" target="_blank">ASTM Standards</a> · <a href="https://www.publications.usace.army.mil/USACE-Publications/Engineer-Manuals/" rel="nofollow noopener" target="_blank">USACE Engineer Manuals</a> · <a href="https://www.iso.org/committee/49802.html" rel="nofollow noopener" target="_blank">ISO Geotechnical</a></div><div class="updated-info" data-updated="2026-05-01" style="text-align:center;font-size:.85rem;opacity:.7;padding:.5rem 0">Last updated: 2026-05-01</div></footer>
+<footer style="background:#0A0A0A;color:rgba(255,255,255,.85);padding:3rem 1.5rem 1.5rem"><div style="max-width:720px;margin:0 auto;text-align:center"><h4 style="color:#FFF;font-size:1.15rem;margin:0 0 .3rem">Technical updates</h4><p style="margin:0 0 1.2rem;color:rgba(255,255,255,.65);font-size:.95rem">Email alerts</p><form action="mailto:contact@geotechnicalengineering1.org" method="post" enctype="text/plain" style="display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap"><input type="email" name="email" placeholder="Your email" style="padding:.7rem 1rem;border-radius:6px;border:none;font-size:.95rem;min-width:220px"><button type="submit" style="background:#404040;color:#FFF;padding:.7rem 1.4rem;border:none;border-radius:6px;font-weight:700;cursor:pointer">Subscribe</button></form><p style="margin:1.5rem 0 0;font-size:.82rem;color:rgba(255,255,255,.5)">Aurora Illinois, USA · <a href="mailto:contact@geotechnicalengineering1.org" style="color:rgba(255,255,255,.7)">contact@geotechnicalengineering1.org</a> · © 2026</p></div><div data-authority-refs class="authority-refs" style="text-align:center;font-size:.8rem;padding:.5rem 0;opacity:.6"><strong>References:</strong> <a href="https://www.astm.org/products-services/standards-and-publications.html" rel="nofollow noopener" target="_blank">ASTM Standards</a> · <a href="https://www.publications.usace.army.mil/USACE-Publications/Engineer-Manuals/" rel="nofollow noopener" target="_blank">USACE Engineer Manuals</a> · <a href="https://www.iso.org/committee/49802.html" rel="nofollow noopener" target="_blank">ISO Geotechnical</a></div><div class="updated-info" data-updated="2026-04-16" style="text-align:center;font-size:.85rem;opacity:.7;padding:.5rem 0">Last updated: 2026-04-16</div></footer>
 
 <script>
 // Sidebar cat-toggle: click expande/contrae cat-sub (REGLA 30b)
