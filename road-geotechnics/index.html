@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
@@ -29,7 +34,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
 header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
 footer a { color: rgba(255,255,255,0.85); }
-    .container { padding: 1rem; }
+    
 summary::-webkit-details-marker { display: none; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 h1, h2, h3, h4 { font-family: var(--font-h); }
@@ -42,7 +47,7 @@ summary:hover { background: rgba(0,0,0,0.02); }
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-    .content-area { flex-direction: column; }
+    
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
 .cta .contacto-line a { color: white; text-decoration: underline; }
@@ -86,7 +91,7 @@ details[open] summary::before { content: '− '; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
 .cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
-    main { padding: 1.5rem; }
+    
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
@@ -108,7 +113,7 @@ main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1p
 
 footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
 .header-contact a:hover { color: white; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .home {
     display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
     font-size: .85rem; font-weight: 600;
@@ -129,7 +134,9 @@ footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; ba
 }
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
-details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }</style>
+details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"url":"https://aurora-illinois.geotechnicalengineering1.org/road-geotechnics/","name":"Roadway in Aurora Illinois – USA","@id":"https://aurora-illinois.geotechnicalengineering1.org/road-geotechnics/","description":"Roadway engineering in Aurora, Illinois, must address the region’s glacial till and silty clay subgrades, which often exhibit low bearing capacity and mois","inLanguage":"en","@type":"WebPage","isPartOf":{"url":"https://aurora-illinois.geotechnicalengineering1.org","@type":"WebSite","@id":"https://aurora-illinois.geotechnicalengineering1.org/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"item":"https://aurora-illinois.geotechnicalengineering1.org/","position":1,"@type":"ListItem","name":"Home"},{"item":"https://aurora-illinois.geotechnicalengineering1.org/road-geotechnics/","position":2,"@type":"ListItem","name":"Roadway"}]},{"name":"Roadway","@type":"ItemList","itemListElement":[{"url":"https://aurora-illinois.geotechnicalengineering1.org/cbr-road/","position":1,"@type":"ListItem","name":"CBR study for road design"},{"url":"https://aurora-illinois.geotechnicalengineering1.org/flexible-pavement/","position":2,"@type":"ListItem","name":"Flexible pavement design"},{"url":"https://aurora-illinois.geotechnicalengineering1.org/rigid-pavement/","position":3,"@type":"ListItem","name":"Rigid pavement design"}]}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#0A2540"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -199,7 +206,14 @@ details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../cbr-road/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">CBR study for road design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../flexible-pavement/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Flexible pavement design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../rigid-pavement/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Rigid pavement design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/ensayo-spt-1.webp" alt="Roadway in Aurora Illinois" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Roadway infrastructure in Aurora, Illinois, must contend with a complex subsurface shaped by glacial activity, including layers of silty clay till, outwash sands, and occasional organics near the Fox River. Comprehensive geotechnical services for roadways begin with a detailed <a href="/investigation/">investigation</a> to characterize these strata. Local compliance follows Illinois Department of Transportation (IDOT) Standard Specifications and the City of Aurora’s public improvement requirements, with design parameters derived from AASHTO LRFD Bridge Design Specifications. Early integration of <a href="/cpt-test/">CPT</a> soundings helps rapidly delineate soft clay pockets and assess liquefaction potential in a seismically moderate region, directly informing pavement structural design and subgrade stabilization strategies.</p>
+<p>Our methodology adheres to nationally recognized ASTM standards and IDOT’s Manual for Geotechnical Design. In-situ evaluation relies heavily on <a href="/lab-in-situ/">in-situ testing</a> programs, including Standard Penetration Tests (SPT) per ASTM D1586 and undisturbed Shelby tube sampling of cohesive soils. To verify compaction compliance during earthwork, we perform <a href="/sand-cone-density/">field density tests</a> using the sand cone method (ASTM D1556) on granular borrow and subbase lifts. All collected samples undergo rigorous <a href="/laboratory/">laboratory</a> analysis, where critical index properties are established through <a href="/atterberg-limits/">Atterberg limits</a> (ASTM D4318) to evaluate the volume-change potential of local lean clays, and <a href="/grain-size/">grain size analysis</a> (ASTM D6913/D7928) quantifies the gradation of base aggregates and drainage layers, ensuring compliance with IDOT CA-6 and CA-10 specifications.</p>
+<p>Typical Aurora roadway projects range from arterial widening along routes like Eola Road to rehabilitation of aging pavements in historic downtown districts. For deep excavations adjacent to existing utilities, <a href="/foundations/">foundations</a> for retaining walls and MSE structures require careful analysis of lateral earth pressures in the stiff glacial till. In residential subdivisions built over former agricultural land, we routinely encounter compressible topsoil requiring overexcavation and engineered fill replacement, a recommendation validated by our consolidation test data. Stormwater management features, such as detention basins under roadways, demand permeability testing of the locally variable outwash deposits to design effective underdrain systems that prevent pavement pumping failures.</p>
+<img src="/img/ensayo-cbr-2.webp" alt="Roadway in Aurora Illinois" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>Our process delivers a seamless sequence from initial boring layout to final pavement design recommendations. Following field exploration and advanced soil mechanics testing, we synthesize the data into a Geotechnical Engineering Report containing boring logs, laboratory test summaries, and specific recommendations for subgrade CBR values, pavement layer coefficients, and any required geotextile separation or lime stabilization. This deliverable provides Aurora’s civil engineers and contractors with actionable, code-compliant parameters that mitigate the risk of differential settlement, frost heave, and premature pavement distress, ensuring long-term performance and safety for the city’s transportation network.</p></div></section></main>
     </div>
 </div>
 

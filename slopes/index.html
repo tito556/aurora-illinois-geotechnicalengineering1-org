@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
@@ -29,7 +34,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
 header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
 footer a { color: rgba(255,255,255,0.85); }
-    .container { padding: 1rem; }
+    
 summary::-webkit-details-marker { display: none; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 h1, h2, h3, h4 { font-family: var(--font-h); }
@@ -42,7 +47,7 @@ summary:hover { background: rgba(0,0,0,0.02); }
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-    .content-area { flex-direction: column; }
+    
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
 .cta .contacto-line a { color: white; text-decoration: underline; }
@@ -86,7 +91,7 @@ details[open] summary::before { content: '− '; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
 .cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
-    main { padding: 1.5rem; }
+    
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
@@ -108,7 +113,7 @@ main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1p
 
 footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
 .header-contact a:hover { color: white; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .home {
     display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
     font-size: .85rem; font-weight: 600;
@@ -129,7 +134,9 @@ footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; ba
 }
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
-details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }</style>
+details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"url":"https://aurora-illinois.geotechnicalengineering1.org/slopes/","name":"Slopes & Walls in Aurora Illinois – USA","@id":"https://aurora-illinois.geotechnicalengineering1.org/slopes/","description":"In Aurora, Illinois, slopes and walls engineering must address the layered glacial till, lakebed sediments, and occasional bedrock valleys typical of the r","inLanguage":"en","@type":"WebPage","isPartOf":{"url":"https://aurora-illinois.geotechnicalengineering1.org","@type":"WebSite","@id":"https://aurora-illinois.geotechnicalengineering1.org/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"item":"https://aurora-illinois.geotechnicalengineering1.org/","position":1,"@type":"ListItem","name":"Home"},{"item":"https://aurora-illinois.geotechnicalengineering1.org/slopes/","position":2,"@type":"ListItem","name":"Slopes & Walls"}]},{"name":"Slopes & Walls","@type":"ItemList","itemListElement":[{"url":"https://aurora-illinois.geotechnicalengineering1.org/anchors/","position":1,"@type":"ListItem","name":"Active/passive anchor design"},{"url":"https://aurora-illinois.geotechnicalengineering1.org/retaining-walls/","position":2,"@type":"ListItem","name":"Retaining wall design"},{"url":"https://aurora-illinois.geotechnicalengineering1.org/slope-stability/","position":3,"@type":"ListItem","name":"Slope stability analysis"}]}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#0A2540"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -198,7 +205,14 @@ details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../anchors/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Active/passive anchor design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../retaining-walls/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Retaining wall design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../slope-stability/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Slope stability analysis</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/muros-contencion-1.webp" alt="Slopes & Walls in Aurora Illinois" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>The investigation and design of slopes and retaining walls in Aurora, Illinois, require a specialized understanding of the region's glacial geology. The city straddles the boundary of the Valparaiso Moraine and outwash plains, leading to complex subsurface conditions dominated by silty clays, glacial tills, and occasional sand lenses. These fine-grained soils are particularly susceptible to slope instability and increased lateral earth pressures due to seasonal pore water pressure variations and frost action. A thorough geotechnical investigation is the critical first step to mitigate risks, beginning with a deep understanding of the site-specific stratigraphy. This process is guided by local building codes that reference the International Building Code (IBC) and the stringent standards of the Illinois Department of Transportation (IDOT) for public projects. To accurately characterize these formations, we rely on essential in-situ testing methods like the <a href="/cpt-test/">Cone Penetration Test (CPT)</a>, which provides continuous data on soil behavior and pore pressure dissipation, a key factor in slope stability analysis.</p>
+<p>A robust geotechnical methodology for Aurora projects is built upon a framework of nationally recognized standards from ASTM International and the American Association of State Highway and Transportation Officials (AASHTO). The design of any retaining wall or stabilized slope begins with quantifying soil strength and compressibility. Our field program integrates precision in-situ testing with comprehensive <a href="/laboratory/">laboratory analysis</a>. We determine critical index properties through standardized <a href="/atterberg-limits/">Atterberg limits</a> testing to classify the high-plasticity clays common in the area and perform <a href="/grain-size/">grain size analysis (sieve + hydrometer)</a> to identify drainage characteristics of any encountered sand seams. For fill materials used in mechanically stabilized earth (MSE) walls, <a href="/sand-cone-density/">field density testing by the sand cone method</a> is routinely performed to verify compliance with the project’s compaction specifications, ensuring the reinforced zone achieves the required internal and external stability.</p>
+<p>Typical projects in Aurora demand tailored solutions that address the local soil challenges. We provide design and investigation services for a wide range of structures, from segmental block MSE walls supporting commercial developments along the I-88 corridor to deep, permanent soldier pile and lagging walls for new residential subdivisions near the Fox River. The stabilization of natural slopes in older neighborhoods like Downer Place, where historical fill and weathered shale can be problematic, requires detailed analysis of both global stability and surficial sloughing. For critical infrastructure, such as bridge abutments and wing walls managed by the City of Aurora, our designs fully integrate the relevant IDOT specifications. The foundation of these structures is paramount, and our recommendations for <a href="/foundations/">deep foundations</a> or shallow bearing elements are directly informed by the site investigation to resist both vertical loads and lateral sliding forces.</p>
+<img src="/img/anclajes-1.webp" alt="Slopes & Walls in Aurora Illinois" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>Our process delivers a clear, actionable path from subsurface uncertainty to construction certainty. We begin with a targeted <a href="/investigation/">site investigation</a> to define the soil profile and groundwater table, which is the single most critical parameter for wall and slope design in Illinois. This data is synthesized into a comprehensive geotechnical report that goes beyond mere data presentation. Our deliverables provide specific design parameters, including soil friction angles, cohesion values for short and long-term conditions, and lateral earth pressure coefficients. We analyze both external stability, including bearing capacity and global slope stability, and internal stability for reinforced systems. The value we provide is the direct mitigation of risk—preventing the costly failures associated with frost heave, excessive settlement, and rotational slides—by delivering practical, constructible designs that are firmly grounded in the specific geology of Aurora, Illinois.</p></div></section></main>
     </div>
 </div>
 

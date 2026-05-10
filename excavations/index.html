@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
@@ -29,7 +34,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
 header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
 footer a { color: rgba(255,255,255,0.85); }
-    .container { padding: 1rem; }
+    
 summary::-webkit-details-marker { display: none; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 h1, h2, h3, h4 { font-family: var(--font-h); }
@@ -42,7 +47,7 @@ summary:hover { background: rgba(0,0,0,0.02); }
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-    .content-area { flex-direction: column; }
+    
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
 .cta .contacto-line a { color: white; text-decoration: underline; }
@@ -86,7 +91,7 @@ details[open] summary::before { content: '− '; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
 .cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
-    main { padding: 1.5rem; }
+    
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
@@ -108,7 +113,7 @@ main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1p
 
 footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
 .header-contact a:hover { color: white; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .home {
     display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
     font-size: .85rem; font-weight: 600;
@@ -129,7 +134,9 @@ footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; ba
 }
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
-details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }</style>
+details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"url":"https://aurora-illinois.geotechnicalengineering1.org/excavations/","name":"Underground Excavations in Aurora Illinois – USA","@id":"https://aurora-illinois.geotechnicalengineering1.org/excavations/","description":"Underground excavations in Aurora, Illinois, require careful planning due to the region’s glacial till, silty clays, and occasional shallow groundwater. Ou","inLanguage":"en","@type":"WebPage","isPartOf":{"url":"https://aurora-illinois.geotechnicalengineering1.org","@type":"WebSite","@id":"https://aurora-illinois.geotechnicalengineering1.org/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"item":"https://aurora-illinois.geotechnicalengineering1.org/","position":1,"@type":"ListItem","name":"Home"},{"item":"https://aurora-illinois.geotechnicalengineering1.org/excavations/","position":2,"@type":"ListItem","name":"Underground Excavations"}]},{"name":"Underground Excavations","@type":"ItemList","itemListElement":[{"url":"https://aurora-illinois.geotechnicalengineering1.org/soft-ground-tunnels/","position":1,"@type":"ListItem","name":"Geotechnical analysis for soft soil tunnels"},{"url":"https://aurora-illinois.geotechnicalengineering1.org/deep-excavations/","position":2,"@type":"ListItem","name":"Geotechnical design of deep excavations"},{"url":"https://aurora-illinois.geotechnicalengineering1.org/excavation-monitoring/","position":3,"@type":"ListItem","name":"Geotechnical excavation monitoring"}]}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#0A2540"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -197,7 +204,14 @@ details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../soft-ground-tunnels/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Geotechnical analysis for soft soil tunnels</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../deep-excavations/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Geotechnical design of deep excavations</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../excavation-monitoring/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Geotechnical excavation monitoring</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/estudio-mecanica-suelos-1.webp" alt="Underground Excavations in Aurora Illinois" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Underground excavations in Aurora, Illinois, demand a thorough understanding of the local geology shaped by glacial activity. The city sits atop a complex stratigraphy of Wisconsinan glacial till, outwash deposits, and, significantly, the sensitive Silurian dolomite bedrock that underlies much of the region. This bedrock, part of the Racine Formation, is known for its karstic features, irregular surface, and variable competency, which directly impacts excavation stability and groundwater control. A successful project begins with a comprehensive geotechnical <a href="/investigation/">investigation</a>, carefully designed to map soil strata and identify the top of rock. This phase is critical for navigating the transition from soft, water-bearing overburden soils into the underlying dolomite, a condition that defines the risk profile for any underground work in the Fox River Valley area in accordance with local building codes.</p>
+<p>The methodology for characterizing these subsurface conditions relies on a suite of standardized in-situ and laboratory testing programs aligned with ASTM and AASHTO standards. We deploy <a href="/cpt-test/">cone penetration testing (CPT)</a> for continuous profiling of the fine-grained tills and lacustrine clays, providing high-resolution data on soil behavior type and undrained shear strength. In granular outwash zones, critical for dewatering design, <a href="/sand-cone-density/">field density tests using the sand cone method</a> verify compaction and relative density. These field explorations are paired with a rigorous <a href="/laboratory/">laboratory</a> testing program where <a href="/atterberg-limits/">Atterberg limits</a> define the plasticity of cohesive soils and a complete <a href="/grain-size/">grain size analysis (sieve and hydrometer)</a> quantifies the distribution in cohesionless materials. This integrated approach ensures that design parameters for earth pressure, ground improvement, and rock mass classification are empirically derived and site-specific.</p>
+<p>Typical underground excavation projects across Aurora and Kane County range from utility trenching and basement construction in the dense downtown historic district to large-scale infrastructure like stormwater detention tunnels and sanitary sewer shafts. Each project presents distinct geotechnical challenges; a deep basement adjacent to the Fox River requires a robust shoring design to manage hydrostatic pressure in alluvial sands, while tunneling through the dolomite must account for karst voids and pinnacled rockheads. The design of support systems, whether soldier pile and lagging walls, soil nail walls, or rock bolts, is directly informed by the interpreted ground model. For projects involving heavy structural loads, integrating this data with our <a href="/foundations/">foundations</a> analysis ensures that the excavation support and the permanent structure work as a unified system, mitigating settlement risks to adjacent historic buildings.</p>
+<img src="/img/tuneles-suelo-blando-2.webp" alt="Underground Excavations in Aurora Illinois" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>Our process delivers a complete excavation design package that moves from conceptual feasibility to construction-ready drawings. The key deliverables include a Geotechnical Data Report, a Groundwater Control Plan, and an Excavation Support Design with full calculations sealed by a licensed Professional Engineer in Illinois. The core value lies in de-risking the project by eliminating uncertainty at the soil-rock interface and providing clear, actionable parameters for contractors. This integrated, data-driven approach prevents costly change orders from unexpected ground conditions, ensures OSHA-compliant excavation safety, and provides the technical confidence required to safely build beneath the surface of Aurora.</p></div></section></main>
     </div>
 </div>
 

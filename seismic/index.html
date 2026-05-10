@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
@@ -29,7 +34,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
 header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
 footer a { color: rgba(255,255,255,0.85); }
-    .container { padding: 1rem; }
+    
 summary::-webkit-details-marker { display: none; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 h1, h2, h3, h4 { font-family: var(--font-h); }
@@ -42,7 +47,7 @@ summary:hover { background: rgba(0,0,0,0.02); }
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-    .content-area { flex-direction: column; }
+    
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
 .cta .contacto-line a { color: white; text-decoration: underline; }
@@ -86,7 +91,7 @@ details[open] summary::before { content: '− '; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
 .cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
-    main { padding: 1.5rem; }
+    
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
@@ -108,7 +113,7 @@ main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1p
 
 footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
 .header-contact a:hover { color: white; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .home {
     display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
     font-size: .85rem; font-weight: 600;
@@ -129,7 +134,9 @@ footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; ba
 }
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
-details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }</style>
+details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"url":"https://aurora-illinois.geotechnicalengineering1.org/seismic/","name":"Seismic in Aurora Illinois – USA","@id":"https://aurora-illinois.geotechnicalengineering1.org/seismic/","description":"Seismic design in Aurora, Illinois, must account for the region’s glacial till and sedimentary bedrock, which can amplify ground motion even from distant N","inLanguage":"en","@type":"WebPage","isPartOf":{"url":"https://aurora-illinois.geotechnicalengineering1.org","@type":"WebSite","@id":"https://aurora-illinois.geotechnicalengineering1.org/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"item":"https://aurora-illinois.geotechnicalengineering1.org/","position":1,"@type":"ListItem","name":"Home"},{"item":"https://aurora-illinois.geotechnicalengineering1.org/seismic/","position":2,"@type":"ListItem","name":"Seismic"}]},{"name":"Seismic","@type":"ItemList","itemListElement":[{"url":"https://aurora-illinois.geotechnicalengineering1.org/seismic-isolation/","position":1,"@type":"ListItem","name":"Base isolation seismic design"},{"url":"https://aurora-illinois.geotechnicalengineering1.org/seismic-microzonation/","position":2,"@type":"ListItem","name":"Seismic microzonation"},{"url":"https://aurora-illinois.geotechnicalengineering1.org/liquefaction/","position":3,"@type":"ListItem","name":"Soil liquefaction analysis"}]}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#0A2540"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -198,7 +205,14 @@ details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../seismic-isolation/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Base isolation seismic design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../seismic-microzonation/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Seismic microzonation</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../liquefaction/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Soil liquefaction analysis</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/licuefaccion-1.webp" alt="Seismic in Aurora Illinois" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Seismic engineering in Aurora, Illinois, directly addresses the unique geological conditions of northeastern Illinois, where the bedrock consists primarily of shallow Ordovician-age dolomite and limestone of the Galena-Platteville formations, overlain by complex glacial till sequences and occasional lacustrine clays. While the region is not associated with the active fault lines of the New Madrid Seismic Zone, local and state building codes, specifically the <em>2018 Illinois Building Code</em> with references to ASCE 7-16, mandate seismic design considerations. A comprehensive seismic study begins with a targeted <a href="/investigation/">geotechnical investigation</a> to classify the site’s seismic class, requiring a thorough understanding of local stratigraphy and the potential for seismic wave amplification in soft, saturated soils common to the Fox River Valley area.</p>
+<p>Our methodology adheres to rigorous United States standards, coupling field exploration with advanced laboratory testing to define dynamic soil properties. We perform deep borings and <a href="/cpt-test/">cone penetration tests (CPT)</a> to gather continuous, high-resolution data on soil behavior without the disturbance of traditional sampling, which is critical for assessing liquefaction susceptibility. For critical layers, we complement this with <a href="/lab-in-situ/">in-situ testing</a> techniques to measure shear wave velocity (Vs) directly, a parameter essential for Site Class determination per the International Building Code (IBC). Undisturbed samples are carefully transported to our <a href="/laboratory/">geotechnical laboratory</a> for cyclic triaxial or resonant column tests, with sample preparation guided by precise <a href="/atterberg-limits/">Atterberg limits</a> evaluation to understand the plasticity characteristics that dominate cyclic response.</p>
+<p>Typical projects in Aurora range from the design of new commercial developments near the Chicago Premium Outlets to critical infrastructure expansions for the city’s growing residential subdivisions and public works facilities. For any deep or shallow foundation system, seismic design must account for kinematic soil-structure interaction, a service we support through detailed site-specific response analysis. A common scenario involves evaluating the stability of a proposed structure’s <a href="/foundations/">foundations</a> under the design earthquake, ensuring that bearing capacity and settlement criteria are met under seismic loading. This is frequently coupled with a liquefaction potential assessment, where a <a href="/grain-size/">grain size analysis</a> incorporating both sieve and hydrometer methods is performed to identify the clean sand and silty sand deposits most vulnerable to pore pressure buildup during a seismic event.</p>
+<img src="/img/aislacion-sismica-1.webp" alt="Seismic in Aurora Illinois" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>Our process culminates in a clear, actionable report that synthesizes all findings, providing the required Site Class, seismic design parameters (S<sub>DS</sub>, S<sub>D1</sub>), and explicit recommendations for ground improvement or foundation design modifications if necessary. Key deliverables include the design response spectrum and, where applicable, post-earthquake settlement estimates. Field verification of any recommended soil densification is supported through a <a href="/sand-cone-density/">field density test (sand cone method)</a> to confirm compliance with project specifications. The ultimate value for our Aurora clients is a defensible, code-compliant design that mitigates seismic risk, protects the structural investment, and ensures public safety by transforming complex geotechnical challenges into reliable engineering solutions.</p></div></section></main>
     </div>
 </div>
 

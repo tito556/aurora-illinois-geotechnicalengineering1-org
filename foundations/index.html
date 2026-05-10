@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
@@ -29,7 +34,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
 header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
 footer a { color: rgba(255,255,255,0.85); }
-    .container { padding: 1rem; }
+    
 summary::-webkit-details-marker { display: none; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 h1, h2, h3, h4 { font-family: var(--font-h); }
@@ -42,7 +47,7 @@ summary:hover { background: rgba(0,0,0,0.02); }
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-    .content-area { flex-direction: column; }
+    
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
 .cta .contacto-line a { color: white; text-decoration: underline; }
@@ -86,7 +91,7 @@ details[open] summary::before { content: '− '; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
 .cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
-    main { padding: 1.5rem; }
+    
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
@@ -108,7 +113,7 @@ main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1p
 
 footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
 .header-contact a:hover { color: white; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .home {
     display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
     font-size: .85rem; font-weight: 600;
@@ -129,7 +134,9 @@ footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; ba
 }
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
-details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }</style>
+details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"url":"https://aurora-illinois.geotechnicalengineering1.org/foundations/","name":"Foundations in Aurora Illinois – USA","@id":"https://aurora-illinois.geotechnicalengineering1.org/foundations/","description":"Foundation engineering in Aurora, Illinois, must address the region’s glacial till and silty clay soils, which exhibit moderate bearing capacity but signif","inLanguage":"en","@type":"WebPage","isPartOf":{"url":"https://aurora-illinois.geotechnicalengineering1.org","@type":"WebSite","@id":"https://aurora-illinois.geotechnicalengineering1.org/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"item":"https://aurora-illinois.geotechnicalengineering1.org/","position":1,"@type":"ListItem","name":"Home"},{"item":"https://aurora-illinois.geotechnicalengineering1.org/foundations/","position":2,"@type":"ListItem","name":"Foundations"}]},{"name":"Foundations","@type":"ItemList","itemListElement":[{"url":"https://aurora-illinois.geotechnicalengineering1.org/piles/","position":1,"@type":"ListItem","name":"Pile foundation design"}]}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#0A2540"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -198,7 +205,14 @@ details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../piles/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Pile foundation design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/pilotes-4.webp" alt="Foundations in Aurora Illinois" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Foundation design in Aurora, Illinois, must account for the region's complex glacial geology, characterized by alternating layers of stiff to hard silty clay till, interbedded with lenses of sand, gravel, and occasional soft lacustrine silts. A reliable foundation begins with a thorough <a href="/investigation/">geotechnical investigation</a> to map these stratigraphic variations and identify potential issues like compressible organic soils in former sloughs or the high plasticity clays that dominate the Plainfield moraine. Local regulations, governed by the City of Aurora Building Code adopting IBC standards, mandate site-specific soil bearing capacity and settlement analyses, making comprehensive <a href="/laboratory/">laboratory testing</a> on undisturbed samples a non-negotiable step to verify design assumptions before construction begins.</p>
+<p>Our methodology adheres to rigorous ASTM and AASHTO standards to define engineering parameters for shallow and deep foundations. We routinely deploy the <a href="/cpt-test/">Cone Penetration Test (CPT)</a> to provide continuous profiling of tip resistance and sleeve friction, which is exceptionally effective for identifying thin, weak seams within the glacial till and estimating pile side-shear. This is integrated with precision laboratory index testing, including <a href="/atterberg-limits/">Atterberg limits</a> to quantify the plasticity characteristics of the fine-grained tills, and complete <a href="/grain-size/">grain-size analysis</a> combining sieve and hydrometer methods to classify the granular interbeds. For granular bearing strata, field verification via <a href="/lab-in-situ/">in-situ testing</a> using the nuclear density gauge ensures compaction meets project specifications, providing a direct correlation to the bearing capacity equations used in design.</p>
+<p>Typical projects across the Fox Valley corridor present distinct geotechnical challenges that demand localized expertise. For the multi-story commercial and mixed-use structures in downtown Aurora, we frequently design deep foundations—specifically drilled piers or driven H-piles—to bypass the desiccated, overconsolidated crust and transfer loads to competent till at depth, mitigating unacceptable settlements. Industrial developments on the city's east side often utilize ground-improved shallow foundations, where precise <a href="/sand-cone-density/">field density testing using the sand cone method</a> provides the necessary quality assurance for engineered fill placed above the compressible alluvium. Residential subdivisions require rigorous footing inspections to confirm bearing on native till, avoiding the expansive or collapsing behavior of disturbed or poorly compacted soils.</p>
+<img src="/img/pilotes-4.webp" alt="Foundations in Aurora Illinois" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>The foundation design process translates raw subsurface data into actionable, constructable recommendations. Our deliverables include detailed bearing capacity calculations, total and differential settlement predictions, and lateral earth pressure diagrams for basement wall design, all calibrated to the specific soil profile encountered in Aurora. We provide clear, technically precise reports that serve as the basis for structural engineering, delivering value by eliminating the uncertainty inherent in this region's glacial stratigraphy. By coupling precise stratigraphic mapping from the CPT with the fundamental soil behavior defined by our laboratory program, we deliver a foundation concept that is optimized for both performance and cost-efficiency, effectively de-risking the subsurface for your project.</p></div></section></main>
     </div>
 </div>
 
